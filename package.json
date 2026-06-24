@@ -1,0 +1,10 @@
+{
+  "name": "kosso-ad-creatives",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Design-system-driven ad creative generation for Kosso Nutrition",
+  "dependencies": {
+    "playwright": "^1.56.1"
+  }
+}

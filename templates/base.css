@@ -1,0 +1,63 @@
+/* ============ KOSSO NUTRITION — Ad Creative Design System ============ */
+@font-face{font-family:'Anton';src:url('FONTDIR/Anton-Regular.woff2') format('woff2');font-weight:400;font-display:block;}
+@font-face{font-family:'Roboto Condensed';src:url('FONTDIR/RobotoCondensed-VF.ttf') format('truetype');font-weight:100 900;font-display:block;}
+
+:root{
+  --ink:#111;--black:#000;--jet:#1A1A1A;--carbon:#222;--graphite:#333;--smoke:#666;
+  --line:#E2E2E2;--cloud:#F5F5F5;--paper:#F8F8F8;--white:#fff;
+  --blue:#65BEEC;--blueDeep:#2E9BD6;--red:#E84E4E;--redDeep:#C8202E;--gold:#E6B400;--green:#28A745;
+  --accent:#E84E4E; /* overridden per product */
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased;}
+html,body{font-family:'Roboto Condensed',sans-serif;}
+.stage{position:relative;overflow:hidden;}
+.disp{font-family:'Anton',sans-serif;text-transform:uppercase;font-weight:400;letter-spacing:.005em;line-height:.92;}
+.cond{font-family:'Roboto Condensed',sans-serif;}
+
+/* ---- Logo lockup (brand-faithful reconstruction) ---- */
+.kosso-logo{display:inline-flex;align-items:center;gap:.42em;line-height:1;}
+.kosso-logo .kn{display:inline-flex;align-items:center;justify-content:center;background:var(--blue);
+  color:#fff;font-family:'Anton';border-radius:.16em;padding:.12em .22em .06em;letter-spacing:.02em;}
+.kosso-logo .wm{display:flex;flex-direction:column;line-height:.86;}
+.kosso-logo .wm b{font-family:'Anton';color:var(--logo-fg,#fff);letter-spacing:.01em;}
+.kosso-logo .wm span{font-family:'Roboto Condensed';font-weight:700;color:var(--logo-fg,#fff);
+  letter-spacing:.34em;opacity:.92;}
+
+/* ---- Star rating ---- */
+.stars{display:inline-flex;align-items:center;gap:.34em;}
+.stars .s{color:var(--gold);letter-spacing:.06em;}
+.stars .lbl{font-weight:700;color:var(--star-fg,#fff);}
+
+/* ---- Pills / badges ---- */
+.pill{display:inline-flex;align-items:center;gap:.4em;border-radius:999px;font-family:'Roboto Condensed';
+  font-weight:700;text-transform:uppercase;letter-spacing:.06em;}
+.badge-red{background:var(--red);color:#fff;}
+.badge-blue{background:var(--blue);color:#06243a;}
+.badge-black{background:#111;color:#fff;}
+.badge-white{background:#fff;color:#111;}
+.badge-outline{background:transparent;border:2px solid currentColor;}
+
+/* ---- Price tag ---- */
+.price{font-family:'Anton';line-height:.9;}
+.price .cur{vertical-align:super;font-size:.5em;}
+.price .cents{vertical-align:super;font-size:.5em;}
+
+/* ---- Trust bar ---- */
+.trustbar{display:flex;align-items:center;justify-content:center;gap:1.1em;flex-wrap:wrap;
+  font-family:'Roboto Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.04em;}
+.trustbar .t{display:inline-flex;align-items:center;gap:.34em;}
+.trustbar .dot{width:.34em;height:.34em;border-radius:50%;background:currentColor;opacity:.5;}
+
+/* ---- Diagonal energy stripe ---- */
+.stripe{position:absolute;transform:rotate(-10deg);}
+
+/* ---- legal / compliance footnote ---- */
+.legal{font-family:'Roboto Condensed';font-weight:400;opacity:.7;line-height:1.18;}
+
+/* ---- product shadow ---- */
+.prod{filter:drop-shadow(0 40px 60px rgba(0,0,0,.45));}
+
+/* ---- safe-zone overlay (debug only) ---- */
+.safe{position:absolute;inset:0;pointer-events:none;}
+.safe .z{position:absolute;left:0;right:0;background:repeating-linear-gradient(45deg,rgba(232,78,78,.18)0,rgba(232,78,78,.18)14px,transparent 14px,transparent 28px);}
+.safe .ln{position:absolute;left:0;right:0;border-top:2px dashed rgba(232,78,78,.7);}

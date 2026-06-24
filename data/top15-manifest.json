@@ -1,0 +1,272 @@
+[
+  {
+    "rank": 1,
+    "handle": "creatine-poeder",
+    "title": "Creatine Poeder",
+    "price": "6.00",
+    "type": "creatine poeder",
+    "images": [
+      "assets/products/p01_0.png",
+      "assets/products/p01_1.png",
+      "assets/products/p01_2.png"
+    ],
+    "cut": "assets/products_cut/p01.png",
+    "accent": "#CC243C",
+    "cut_size": [
+      498,
+      584
+    ]
+  },
+  {
+    "rank": 2,
+    "handle": "eiwitten-maximaal-whey-protein",
+    "title": "Eiwitten Maximaal (Whey Protein)",
+    "price": "36.00",
+    "type": "Whey Protein",
+    "images": [
+      "assets/products/p02_0.png",
+      "assets/products/p02_1.png",
+      "assets/products/p02_2.png"
+    ],
+    "cut": "assets/products_cut/p02.png",
+    "accent": "#6C9CCC",
+    "cut_size": [
+      500,
+      852
+    ]
+  },
+  {
+    "rank": 3,
+    "handle": "protein-pops",
+    "title": "Protein Pops (protein cereal)",
+    "price": "7.50",
+    "type": "Protein Pops",
+    "images": [
+      "assets/products/p03_0.png",
+      "assets/products/p03_1.png",
+      "assets/products/p03_2.png"
+    ],
+    "cut": "assets/products_cut/p03.png",
+    "accent": "#E4B484",
+    "cut_size": [
+      700,
+      615
+    ]
+  },
+  {
+    "rank": 4,
+    "handle": "tsunami-extreme-pre-workout",
+    "title": "Tsunami Extreme Pre-Workout",
+    "price": "42.50",
+    "type": "pre workout",
+    "images": [
+      "assets/products/p04_0.png",
+      "assets/products/p04_1.png",
+      "assets/products/p04_2.png"
+    ],
+    "cut": "assets/products_cut/p04.png",
+    "accent": "#0C549C",
+    "cut_size": [
+      504,
+      732
+    ]
+  },
+  {
+    "rank": 5,
+    "handle": "apocalypse-extreme-pre-workout",
+    "title": "Apocalypse Extreme Pre-Workout",
+    "price": "42.50",
+    "type": "pre workout",
+    "images": [
+      "assets/products/p05_0.png",
+      "assets/products/p05_1.png",
+      "assets/products/p05_2.png"
+    ],
+    "cut": "assets/products_cut/p05.png",
+    "accent": "#B46C3C",
+    "cut_size": [
+      503,
+      731
+    ]
+  },
+  {
+    "rank": 6,
+    "handle": "protein-cheat-bar",
+    "title": "Protein Cheat Bar",
+    "price": "2.75",
+    "type": "Protein Cheat Bar",
+    "images": [
+      "assets/products/p06_0.png",
+      "assets/products/p06_1.jpg",
+      "assets/products/p06_2.jpg"
+    ],
+    "cut": "assets/products_cut/p06.png",
+    "accent": "#B48454",
+    "cut_size": [
+      993,
+      797
+    ]
+  },
+  {
+    "rank": 7,
+    "handle": "madlabs-extreme-pre-workout",
+    "title": "MADLABS EXTREME PRE-WORKOUT",
+    "price": "42.50",
+    "type": "pre workout",
+    "images": [
+      "assets/products/p07_0.png",
+      "assets/products/p07_1.png",
+      "assets/products/p07_2.png"
+    ],
+    "cut": "assets/products_cut/p07.png",
+    "accent": "#549C3C",
+    "cut_size": [
+      504,
+      731
+    ]
+  },
+  {
+    "rank": 8,
+    "handle": "electrolyte",
+    "title": "ELECTROLYTE (ORS Poeder)",
+    "price": "24.95",
+    "type": "Electrolytes",
+    "images": [
+      "assets/products/p08_0.png",
+      "assets/products/p08_1.png",
+      "assets/products/p08_2.png"
+    ],
+    "cut": "assets/products_cut/p08.png",
+    "accent": "#E4CC24",
+    "cut_size": [
+      495,
+      582
+    ]
+  },
+  {
+    "rank": 9,
+    "handle": "anaconda-extreme-pre-workout",
+    "title": "ANACONDA EXTREME PRE-WORKOUT",
+    "price": "42.50",
+    "type": "pre workout",
+    "images": [
+      "assets/products/p09_0.png",
+      "assets/products/p09_1.png",
+      "assets/products/p09_2.png"
+    ],
+    "cut": "assets/products_cut/p09.png",
+    "accent": "#6C3C24",
+    "cut_size": [
+      502,
+      731
+    ]
+  },
+  {
+    "rank": 10,
+    "handle": "bulk-weight-gainer",
+    "title": "Bulk (Weight gainer)",
+    "price": "39.95",
+    "type": "Weight Gainer",
+    "images": [
+      "assets/products/p10_0.png",
+      "assets/products/p10_1.png",
+      "assets/products/p10_2.png"
+    ],
+    "cut": "assets/products_cut/p10.png",
+    "accent": "#9C3C3C",
+    "cut_size": [
+      505,
+      716
+    ]
+  },
+  {
+    "rank": 11,
+    "handle": "ashwagandha-ksm-66",
+    "title": "Ashwagandha KSM-66",
+    "price": "15.99",
+    "type": "Vitamines",
+    "images": [
+      "assets/products/p11_0.png",
+      "assets/products/p11_1.png",
+      "assets/products/p11_2.png"
+    ],
+    "cut": "assets/products_cut/p11.png",
+    "accent": "#3CB454",
+    "cut_size": [
+      483,
+      545
+    ]
+  },
+  {
+    "rank": 12,
+    "handle": "samurai-extreme-pre-workout",
+    "title": "SAMURAI EXTREME PRE-WORKOUT",
+    "price": "42.50",
+    "type": "pre workout",
+    "images": [
+      "assets/products/p12_0.png",
+      "assets/products/p12_1.png",
+      "assets/products/p12_2.png"
+    ],
+    "cut": "assets/products_cut/p12.png",
+    "accent": "#840C84",
+    "cut_size": [
+      504,
+      732
+    ]
+  },
+  {
+    "rank": 13,
+    "handle": "opgepompt",
+    "title": "Opgepompt (Cafeïnevrij)",
+    "price": "39.95",
+    "type": "pre workout",
+    "images": [
+      "assets/products/p13_0.png",
+      "assets/products/p13_1.png",
+      "assets/products/p13_2.png"
+    ],
+    "cut": "assets/products_cut/p13.png",
+    "accent": "#B42454",
+    "cut_size": [
+      708,
+      544
+    ]
+  },
+  {
+    "rank": 14,
+    "handle": "clear-whey",
+    "title": "CLEAR WHEY",
+    "price": "39.00",
+    "type": "Clear Whey",
+    "images": [
+      "assets/products/p14_0.png",
+      "assets/products/p14_1.png",
+      "assets/products/p14_2.png"
+    ],
+    "cut": "assets/products_cut/p14.png",
+    "accent": "#E4CC9C",
+    "cut_size": [
+      512,
+      850
+    ]
+  },
+  {
+    "rank": 15,
+    "handle": "protein-ijskoffie",
+    "title": "Protein ijskoffie",
+    "price": "23.95",
+    "type": "Protein ijskoffie",
+    "images": [
+      "assets/products/p15_0.png",
+      "assets/products/p15_1.png",
+      "assets/products/p15_2.png"
+    ],
+    "cut": "assets/products_cut/p15.png",
+    "accent": "#B46C3C",
+    "cut_size": [
+      564,
+      689
+    ]
+  }
+]

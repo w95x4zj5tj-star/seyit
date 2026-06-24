@@ -1,0 +1,6 @@
+node_modules/
+.rtmp/
+data/products-raw-*.json
+data/bs-all-*.html
+data/home.html
+data/bestsellers.html

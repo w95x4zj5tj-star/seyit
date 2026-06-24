@@ -1,0 +1,129 @@
+<!doctype html><html><head><meta charset="utf-8"><style>/* ============ KOSSO NUTRITION — Ad Creative Design System ============ */
+@font-face{font-family:'Anton';src:url('file:///home/user/seyit/assets/fonts/Anton-Regular.woff2') format('woff2');font-weight:400;font-display:block;}
+@font-face{font-family:'Roboto Condensed';src:url('file:///home/user/seyit/assets/fonts/RobotoCondensed-VF.ttf') format('truetype');font-weight:100 900;font-display:block;}
+
+:root{
+  --ink:#111;--black:#000;--jet:#1A1A1A;--carbon:#222;--graphite:#333;--smoke:#666;
+  --line:#E2E2E2;--cloud:#F5F5F5;--paper:#F8F8F8;--white:#fff;
+  --blue:#65BEEC;--blueDeep:#2E9BD6;--red:#E84E4E;--redDeep:#C8202E;--gold:#E6B400;--green:#28A745;
+  --accent:#E84E4E; /* overridden per product */
+}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-font-smoothing:antialiased;}
+html,body{font-family:'Roboto Condensed',sans-serif;}
+.stage{position:relative;overflow:hidden;}
+.disp{font-family:'Anton',sans-serif;text-transform:uppercase;font-weight:400;letter-spacing:.005em;line-height:.92;}
+.cond{font-family:'Roboto Condensed',sans-serif;}
+
+/* ---- Logo lockup (brand-faithful reconstruction) ---- */
+.kosso-logo{display:inline-flex;align-items:center;gap:.42em;line-height:1;}
+.kosso-logo .kn{display:inline-flex;align-items:center;justify-content:center;background:var(--blue);
+  color:#fff;font-family:'Anton';border-radius:.16em;padding:.12em .22em .06em;letter-spacing:.02em;}
+.kosso-logo .wm{display:flex;flex-direction:column;line-height:.86;}
+.kosso-logo .wm b{font-family:'Anton';color:var(--logo-fg,#fff);letter-spacing:.01em;}
+.kosso-logo .wm span{font-family:'Roboto Condensed';font-weight:700;color:var(--logo-fg,#fff);
+  letter-spacing:.34em;opacity:.92;}
+
+/* ---- Star rating ---- */
+.stars{display:inline-flex;align-items:center;gap:.34em;}
+.stars .s{color:var(--gold);letter-spacing:.06em;}
+.stars .lbl{font-weight:700;color:var(--star-fg,#fff);}
+
+/* ---- Pills / badges ---- */
+.pill{display:inline-flex;align-items:center;gap:.4em;border-radius:999px;font-family:'Roboto Condensed';
+  font-weight:700;text-transform:uppercase;letter-spacing:.06em;}
+.badge-red{background:var(--red);color:#fff;}
+.badge-blue{background:var(--blue);color:#06243a;}
+.badge-black{background:#111;color:#fff;}
+.badge-white{background:#fff;color:#111;}
+.badge-outline{background:transparent;border:2px solid currentColor;}
+
+/* ---- Price tag ---- */
+.price{font-family:'Anton';line-height:.9;}
+.price .cur{vertical-align:super;font-size:.5em;}
+.price .cents{vertical-align:super;font-size:.5em;}
+
+/* ---- Trust bar ---- */
+.trustbar{display:flex;align-items:center;justify-content:center;gap:1.1em;flex-wrap:wrap;
+  font-family:'Roboto Condensed';font-weight:700;text-transform:uppercase;letter-spacing:.04em;}
+.trustbar .t{display:inline-flex;align-items:center;gap:.34em;}
+.trustbar .dot{width:.34em;height:.34em;border-radius:50%;background:currentColor;opacity:.5;}
+
+/* ---- Diagonal energy stripe ---- */
+.stripe{position:absolute;transform:rotate(-10deg);}
+
+/* ---- legal / compliance footnote ---- */
+.legal{font-family:'Roboto Condensed';font-weight:400;opacity:.7;line-height:1.18;}
+
+/* ---- product shadow ---- */
+.prod{filter:drop-shadow(0 40px 60px rgba(0,0,0,.45));}
+
+/* ---- safe-zone overlay (debug only) ---- */
+.safe{position:absolute;inset:0;pointer-events:none;}
+.safe .z{position:absolute;left:0;right:0;background:repeating-linear-gradient(45deg,rgba(232,78,78,.18)0,rgba(232,78,78,.18)14px,transparent 14px,transparent 28px);}
+.safe .ln{position:absolute;left:0;right:0;border-top:2px dashed rgba(232,78,78,.7);}
+</style></head>
+<body><div class="stage" style="width:1600px;height:2260px;background:#fff;padding:70px 80px;color:#111">
+  <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:4px solid #111;padding-bottom:26px">
+    <div class="kosso-logo" style="--logo-fg:#111;font-size:42px"><span class="kn" style="font-size:48px">KN</span><span class="wm"><b style="font-size:50px">KOSSO</b><span style="font-size:22px">NUTRITION</span></span></div>
+    <div class="disp" style="font-size:40px;color:#111">AD CREATIVE · DESIGN SYSTEM</div>
+  </div>
+
+  <div class="disp" style="font-size:34px;margin:40px 0 18px;color:var(--red)">01 — Kleurenpalet</div>
+  <div style="display:flex;gap:26px;flex-wrap:wrap">
+    <div style="display:flex;flex-direction:column"><div style="width:170px;height:120px;border-radius:14px;background:#111111;border:1px solid #e2e2e2"></div><div class="cond" style="font-weight:700;margin-top:8px;font-size:22px;color:#111">Ink</div><div class="cond" style="color:#777;font-size:20px">#111111</div></div><div style="display:flex;flex-direction:column"><div style="width:170px;height:120px;border-radius:14px;background:#65BEEC;border:1px solid #e2e2e2"></div><div class="cond" style="font-weight:700;margin-top:8px;font-size:22px;color:#111">Brand Blue</div><div class="cond" style="color:#777;font-size:20px">#65BEEC</div></div><div style="display:flex;flex-direction:column"><div style="width:170px;height:120px;border-radius:14px;background:#E84E4E;border:1px solid #e2e2e2"></div><div class="cond" style="font-weight:700;margin-top:8px;font-size:22px;color:#111">Energy Red</div><div class="cond" style="color:#777;font-size:20px">#E84E4E</div></div><div style="display:flex;flex-direction:column"><div style="width:170px;height:120px;border-radius:14px;background:#C8202E;border:1px solid #e2e2e2"></div><div class="cond" style="font-weight:700;margin-top:8px;font-size:22px;color:#111">Sale Red</div><div class="cond" style="color:#777;font-size:20px">#C8202E</div></div><div style="display:flex;flex-direction:column"><div style="width:170px;height:120px;border-radius:14px;background:#E6B400;border:1px solid #e2e2e2"></div><div class="cond" style="font-weight:700;margin-top:8px;font-size:22px;color:#111">Gold ★</div><div class="cond" style="color:#777;font-size:20px">#E6B400</div></div><div style="display:flex;flex-direction:column"><div style="width:170px;height:120px;border-radius:14px;background:#F8F8F8;border:1px solid #e2e2e2"></div><div class="cond" style="font-weight:700;margin-top:8px;font-size:22px;color:#111">Paper</div><div class="cond" style="color:#777;font-size:20px">#F8F8F8</div></div><div style="display:flex;flex-direction:column"><div style="width:170px;height:120px;border-radius:14px;background:#FFFFFF;border:1px solid #e2e2e2"></div><div class="cond" style="font-weight:700;margin-top:8px;font-size:22px;color:#111">White</div><div class="cond" style="color:#777;font-size:20px">#FFFFFF</div></div>
+  </div>
+
+  <div class="disp" style="font-size:34px;margin:48px 0 18px;color:var(--red)">02 — Typografie</div>
+  <div style="display:flex;gap:70px;align-items:flex-end">
+    <div><div class="cond" style="color:#777;font-size:22px;letter-spacing:.2em">DISPLAY · KOPPEN</div><div class="disp" style="font-size:120px;line-height:.9">ANTON</div><div class="cond" style="color:#999;font-size:22px">Altijd hoofdletters · Anton</div></div>
+    <div><div class="cond" style="color:#777;font-size:22px;letter-spacing:.2em">BODY · TEKST</div><div class="cond" style="font-size:58px;font-weight:700">Roboto Condensed</div><div class="cond" style="font-size:40px;font-weight:400">Regular &amp; Bold · 400 / 700 / 900</div></div>
+  </div>
+
+  <div class="disp" style="font-size:34px;margin:48px 0 18px;color:var(--red)">03 — Componenten</div>
+  <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+    <span class="pill badge-red" style="font-size:26px;padding:.5em 1em">★ Bestseller</span>
+    <span class="pill badge-blue" style="font-size:26px;padding:.5em 1em">Wat zit erin?</span>
+    <span class="pill badge-black" style="font-size:26px;padding:.5em 1em">Bestel nu →</span>
+    <span class="stars" style="font-size:30px;--star-fg:#111"><span class="s">★★★★★</span><span class="lbl">4,5 / 5 · 5.300+</span></span>
+    <span style="display:inline-flex;flex-direction:column;align-items:flex-start"><span class="cond" style="font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:22px;color:#fff;background:#E84E4E;padding:.1em .5em;border-radius:6px 6px 0 0">Nu vanaf</span><span class="price" style="font-size:84px;color:#fff;background:#111;padding:.04em .2em .08em;border-radius:0 10px 10px 10px"><span class="cur">€</span>6<span class="cents">,00</span></span></span>
+  </div>
+
+  <div class="disp" style="font-size:34px;margin:48px 0 18px;color:var(--red)">04 — De 5 creative concepten (per product)</div>
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:20px">
+    
+      <div style="border-radius:16px;overflow:hidden;border:1px solid #e2e2e2;background:#111;color:#fff;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:space-between;padding:22px">
+        <div class="cond" style="font-weight:700;font-size:22px;opacity:.6">01</div>
+        <div><div class="disp" style="font-size:34px;line-height:.95">HERO</div><div class="cond" style="font-size:22px;margin-top:8px;opacity:.85">Merk &amp; bestseller</div></div>
+      </div>
+      <div style="border-radius:16px;overflow:hidden;border:1px solid #e2e2e2;background:var(--red);color:#fff;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:space-between;padding:22px">
+        <div class="cond" style="font-weight:700;font-size:22px;opacity:.6">02</div>
+        <div><div class="disp" style="font-size:34px;line-height:.95">SALE</div><div class="cond" style="font-size:22px;margin-top:8px;opacity:.85">Prijs &amp; aanbod</div></div>
+      </div>
+      <div style="border-radius:16px;overflow:hidden;border:1px solid #e2e2e2;background:#F8F8F8;color:#111;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:space-between;padding:22px">
+        <div class="cond" style="font-weight:700;font-size:22px;opacity:.6">03</div>
+        <div><div class="disp" style="font-size:34px;line-height:.95">PROBLEEM→OPLOSSING</div><div class="cond" style="font-size:22px;margin-top:8px;opacity:.85">Herkenning</div></div>
+      </div>
+      <div style="border-radius:16px;overflow:hidden;border:1px solid #e2e2e2;background:#1a1a1a;color:#fff;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:space-between;padding:22px">
+        <div class="cond" style="font-weight:700;font-size:22px;opacity:.6">04</div>
+        <div><div class="disp" style="font-size:34px;line-height:.95">INFORMATIEF</div><div class="cond" style="font-size:22px;margin-top:8px;opacity:.85">USP’s &amp; feiten</div></div>
+      </div>
+      <div style="border-radius:16px;overflow:hidden;border:1px solid #e2e2e2;background:#eef6fc;color:#111;aspect-ratio:4/5;display:flex;flex-direction:column;justify-content:space-between;padding:22px">
+        <div class="cond" style="font-weight:700;font-size:22px;opacity:.6">05</div>
+        <div><div class="disp" style="font-size:34px;line-height:.95">SOCIAL PROOF</div><div class="cond" style="font-size:22px;margin-top:8px;opacity:.85">Reviews &amp; sterren</div></div>
+      </div>
+  </div>
+
+  <div class="disp" style="font-size:34px;margin:48px 0 16px;color:var(--red)">05 — Formaten &amp; NVWA/EU compliance</div>
+  <div style="display:flex;gap:50px">
+    <div class="cond" style="font-size:30px;line-height:1.5;color:#222">
+      <b>Story</b> 1080×1920 (9:16) · <b>Feed</b> 1080×1350 (4:5)<br>
+      Veilige marges gerespecteerd (boven/onder vrij voor UI &amp; caption)
+    </div>
+    <div class="cond" style="font-size:26px;line-height:1.5;color:#222;border-left:5px solid var(--red);padding-left:22px">
+      ✓ Geen ongeoorloofde gezondheidsclaims<br>
+      ✓ Alleen EU-toegestane claims (eiwitten, creatine) met exacte bewoording<br>
+      ✓ Botanicals (Ashwagandha) &amp; pre-workouts: claimvrij<br>
+      ✓ Verplichte vermeldingen (cafeïne, supplement-disclaimer)
+    </div>
+  </div>
+</div></body></html>
