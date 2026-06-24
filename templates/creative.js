@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const FONTDIR = 'file://' + path.resolve(__dirname, '../assets/fonts');
 const BASE_CSS = fs.readFileSync(path.resolve(__dirname, 'base.css'), 'utf8').split('FONTDIR').join(FONTDIR);
+const BG = require('./bg.js');
 
 const SIZES = {
   story:  { w:1080, h:1920, key:'story',  safeTop:250, safeBot:320, side:72 },
@@ -47,38 +48,45 @@ function diagStripe(accent){
 
 // ---------- archetypes ----------
 // Each returns inner HTML for the .stage. p = product spec, S = size obj.
-function A1_hero(p,S){ // BRAND / HERO — awareness, claim-free
+// Per-product variation via p.rank so each product's 5 creatives feel like a mix.
+function A1_hero(p,S){ // BRAND / HERO — awareness, claim-free. studio <-> immersive ambient
   const big = S.key==='story';
+  const pb = big?300:255, pcx='50%';
+  const bg = (p.rank%2===0) ? BG.ambient(p.cutAbs,p.accent) : BG.studio(p.accent);
   return `
-  <div style="position:absolute;inset:0;background:radial-gradient(125% 80% at 50% 16%, #2c2c2c 0%, #161616 52%, #0b0b0b 100%)"></div>
-  ${gridDots()}
-  <div style="position:absolute;left:0;right:0;bottom:0;height:30%;background:linear-gradient(0deg, var(--accent) 0%, transparent 100%);opacity:.22"></div>
+  ${bg}
+  ${BG.grain(0.09)}
+  ${BG.vignette(0.5)}
   <div style="position:absolute;left:${S.side}px;right:${S.side}px;top:${S.safeTop-(big?70:34)}px;display:flex;justify-content:space-between;align-items:center">
     ${logo(1.15)}
     <span class="pill badge-red" style="font-size:26px;padding:.5em .95em">★ Bestseller</span>
   </div>
-  <div style="position:absolute;left:${S.side}px;right:${S.side}px;top:${big?330:230}px;text-align:center">
+  <div style="position:absolute;left:${S.side}px;right:${S.side}px;top:${big?320:222}px;text-align:center">
     <div class="cond" style="font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);font-size:${big?34:30}px">${p.kicker}</div>
-    <div class="disp" style="color:#fff;font-size:${big?164:140}px;margin-top:10px">${p.name}</div>
-    <div class="cond" style="color:#cfcfcf;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:${big?46:40}px;margin-top:12px">${p.sub}</div>
+    <div class="disp" style="color:#fff;font-size:${big?164:140}px;margin-top:10px;text-shadow:0 4px 30px rgba(0,0,0,.5)">${p.name}</div>
+    <div class="cond" style="color:#e2e2e2;font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:${big?46:40}px;margin-top:12px">${p.sub}</div>
   </div>
-  <img class="prod" src="${p.cutAbs}" style="position:absolute;left:50%;transform:translateX(-50%);bottom:${big?300:255}px;max-width:${big?80:74}%;max-height:${big?44:46}%;object-fit:contain"/>
+  ${BG.contact(pcx, pb-14, big?560:480, 70)}
+  <img class="prod" src="${p.cutAbs}" style="position:absolute;left:${pcx};transform:translateX(-50%);bottom:${pb}px;max-width:${big?80:74}%;max-height:${big?44:46}%;object-fit:contain"/>
   <div style="position:absolute;left:0;right:0;bottom:${big?180:120}px;display:flex;justify-content:center">${stars(1.08)}</div>
-  <div style="position:absolute;left:0;right:0;bottom:${big?108:64}px;text-align:center"><span class="cond" style="color:#7d7d7d;font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:23px">KWALITEIT = PRIORITEIT</span></div>`;
+  <div style="position:absolute;left:0;right:0;bottom:${big?108:64}px;text-align:center"><span class="cond" style="color:#9a9a9a;font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:23px">KWALITEIT = PRIORITEIT</span></div>`;
 }
 
-function A2_sale(p,S){ // SALE / OFFER — conversion, claim-free
+function A2_sale(p,S){ // SALE / OFFER — conversion, claim-free. bold energy <-> immersive ambient
   const big=S.key==='story';
+  const useAmbient = (p.rank%3===0);
+  const bg = useAmbient ? BG.ambient(p.cutAbs,p.accent,true) : BG.energy(p.accent);
   return `
-  <div style="position:absolute;inset:0;background:linear-gradient(160deg,var(--accent) 0%, var(--accentDeep) 100%)"></div>
-  ${gridDots('rgba(0,0,0,.06)')}
-  <div style="position:absolute;left:0;right:0;top:0;height:${big?64:60}%;clip-path:polygon(0 0,100% 0,100% 78%,0 100%);background:#111"></div>
+  ${bg}
+  <div style="position:absolute;right:-12%;top:${big?260:180}px;width:${big?78:74}%;height:${big?52:56}%;background:radial-gradient(closest-side, rgba(0,0,0,.55), transparent 72%);filter:blur(20px)"></div>
+  ${BG.grain(0.08)}
   <div style="position:absolute;left:${S.side}px;right:${S.side}px;top:${S.safeTop-(big?70:30)}px;display:flex;justify-content:space-between;align-items:center">
     ${logo(1.1)}<span class="pill badge-white" style="font-size:24px;padding:.5em .9em">${p.flavor||'Topkwaliteit'}</span>
   </div>
-  <img class="prod" src="${p.cutAbs}" style="position:absolute;right:${big?2:0}%;top:${big?320:230}px;max-width:${big?58:52}%;max-height:${big?42:46}%;object-fit:contain"/>
+  ${BG.contact(big?'72%':'70%', big?430:350, big?420:380, 56)}
+  <img class="prod" src="${p.cutAbs}" style="position:absolute;right:${big?2:0}%;top:${big?320:230}px;max-width:${big?58:52}%;max-height:${big?42:46}%;object-fit:contain;filter:drop-shadow(0 30px 50px rgba(0,0,0,.5))"/>
   <div style="position:absolute;left:${S.side}px;top:${big?360:300}px;max-width:54%">
-    <div class="disp" style="color:#fff;font-size:${big?96:84}px;line-height:.9">${p.name}</div>
+    <div class="disp" style="color:#fff;font-size:${big?96:84}px;line-height:.9;text-shadow:0 4px 24px rgba(0,0,0,.4)">${p.name}</div>
   </div>
   <div style="position:absolute;left:${S.side}px;bottom:${big?430:355}px">${priceTag(p.price,'Nu vanaf',big?1:0.92)}</div>
   <div style="position:absolute;left:${S.side}px;right:${S.side}px;bottom:${big?250:205}px">
@@ -89,11 +97,15 @@ function A2_sale(p,S){ // SALE / OFFER — conversion, claim-free
     <span class="pill badge-black" style="font-size:${big?34:30}px;padding:.6em 1.4em">Bestel op kossonutrition.nl →</span></div>`;
 }
 
-function A3_problem(p,S){ // PROBLEEM → OPLOSSING — consideration, claim-safe framing
+function A3_problem(p,S){ // PROBLEEM → OPLOSSING — consideration, claim-safe. clean textured split
   const big=S.key==='story';
+  const floor = S.safeBot-(big?20:0);
   return `
-  <div style="position:absolute;inset:0;background:#F8F8F8"></div>
-  <div style="position:absolute;left:0;right:0;bottom:0;height:54%;background:#111"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,#ffffff,#eef2f5)"></div>
+  <div style="position:absolute;left:-10%;top:-8%;width:60%;height:50%;border-radius:50%;background:var(--accent);opacity:.10;filter:blur(80px)"></div>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:54%;background:linear-gradient(180deg,#181818,#0c0c0c)"></div>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:54%">${BG.grain(0.12)}</div>
+  <div style="position:absolute;left:0;right:0;bottom:54%;height:120px;background:linear-gradient(180deg,transparent,rgba(0,0,0,.12))"></div>
   <div style="position:absolute;left:${S.side}px;right:${S.side}px;top:${S.safeTop-(big?60:24)}px">${logo(1.05,'#111')}</div>
   <div style="position:absolute;left:${S.side}px;right:${S.side}px;top:${big?330:250}px">
     <span class="pill" style="background:#111;color:#fff;font-size:26px;padding:.5em 1em">DE SITUATIE</span>
@@ -103,54 +115,58 @@ function A3_problem(p,S){ // PROBLEEM → OPLOSSING — consideration, claim-saf
     <span class="disp" style="color:var(--accent);font-size:${big?64:54}px">↓</span>
     <span class="pill" style="background:var(--accent);color:#fff;font-size:26px;padding:.5em 1em">DE OPLOSSING</span>
   </div>
-  <img class="prod" src="${p.cutAbs}" style="position:absolute;left:${big?-2:-4}%;bottom:${S.safeBot-(big?20:0)}px;max-width:${big?56:50}%;max-height:${big?44:46}%;object-fit:contain"/>
+  ${BG.contact(big?'24%':'22%', floor-6, big?420:360, 50)}
+  <img class="prod" src="${p.cutAbs}" style="position:absolute;left:${big?-2:-4}%;bottom:${floor}px;max-width:${big?56:50}%;max-height:${big?44:46}%;object-fit:contain;filter:drop-shadow(0 26px 40px rgba(0,0,0,.5))"/>
   <div style="position:absolute;right:${S.side}px;bottom:${big?420:300}px;width:${big?48:46}%;text-align:right">
     <div class="disp" style="color:#fff;font-size:${big?80:68}px">${p.name}</div>
-    <div class="cond" style="color:#cfcfcf;font-weight:700;font-size:${big?36:32}px;margin-top:14px;line-height:1.2">${p.solution}</div>
+    <div class="cond" style="color:#dcdcdc;font-weight:700;font-size:${big?36:32}px;margin-top:14px;line-height:1.2">${p.solution}</div>
   </div>
   <div style="position:absolute;right:${S.side}px;bottom:${big?180:90}px">${stars(0.92)}</div>`;
 }
 
-function A4_info(p,S){ // INFORMATIEF / USP — education, factual + optional authorized claim
+function A4_info(p,S){ // INFORMATIEF / USP — education. realistic carbon <-> immersive ambient
   const big=S.key==='story';
+  const bg = (p.rank%2===1) ? BG.carbon(p.accent) : (BG.ambient(p.cutAbs,p.accent,true)+`<div style="position:absolute;left:0;top:0;bottom:0;width:12px;background:linear-gradient(180deg,var(--accent),var(--accentDeep))"></div>`);
   const chips = p.usps.map(u=>`<div style="display:flex;align-items:center;gap:.6em;margin-bottom:${big?22:16}px">
-      <span style="flex:0 0 auto;width:${big?52:46}px;height:${big?52:46}px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Anton;font-size:${big?26:22}px">✓</span>
+      <span style="flex:0 0 auto;width:${big?52:46}px;height:${big?52:46}px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Anton;font-size:${big?26:22}px;box-shadow:0 6px 18px rgba(0,0,0,.4)">✓</span>
       <span class="cond" style="color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:${big?38:33}px">${u}</span></div>`).join('');
   return `
-  <div style="position:absolute;inset:0;background:radial-gradient(120% 80% at 80% 10%, #232323 0%, #131313 60%, #0b0b0b 100%)"></div>
-  ${gridDots()}
-  <div style="position:absolute;left:0;top:0;bottom:0;width:10px;background:var(--accent)"></div>
+  ${bg}
+  ${BG.grain(0.07)}
   <div style="position:absolute;left:${S.side}px;right:${S.side}px;top:${S.safeTop-(big?60:24)}px;display:flex;justify-content:space-between;align-items:center">
     ${logo(1.05)}<span class="pill badge-blue" style="font-size:24px;padding:.5em .9em">Wat zit erin?</span></div>
   <div style="position:absolute;left:${S.side}px;top:${big?330:250}px">
     <div class="cond" style="font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--accent);font-size:${big?30:26}px">${p.kicker}</div>
     <div class="disp" style="color:#fff;font-size:${big?104:88}px;margin-top:8px">${p.name}</div>
   </div>
-  <img class="prod" src="${p.cutAbs}" style="position:absolute;right:${big?-4:-6}%;top:${big?560:430}px;max-width:${big?52:48}%;max-height:${big?40:42}%;object-fit:contain"/>
+  <img class="prod" src="${p.cutAbs}" style="position:absolute;right:${big?-4:-6}%;top:${big?560:430}px;max-width:${big?52:48}%;max-height:${big?40:42}%;object-fit:contain;filter:drop-shadow(0 26px 44px rgba(0,0,0,.55))"/>
   <div style="position:absolute;left:${S.side}px;top:${big?620:480}px;width:${big?60:58}%">${chips}</div>
   ${p.claim?`<div style="position:absolute;left:${S.side}px;right:${S.side}px;bottom:${big?170:96}px">
-     <div class="cond" style="color:#dfdfdf;font-weight:700;font-size:${big?30:26}px;line-height:1.25;border-left:5px solid var(--accent);padding-left:16px">${p.claim}</div></div>`:''}
+     <div class="cond" style="color:#e6e6e6;font-weight:700;font-size:${big?30:26}px;line-height:1.25;border-left:5px solid var(--accent);padding-left:16px">${p.claim}</div></div>`:''}
   <div style="position:absolute;left:${S.side}px;right:${S.side}px;bottom:${big?80:36}px">
-    <div class="legal" style="color:#888;font-size:19px">${p.legal||'Voedingssupplement. Niet ter vervanging van een gevarieerde voeding en gezonde leefstijl.'}</div></div>`;
+    <div class="legal" style="color:#9a9a9a;font-size:19px">${p.legal||'Voedingssupplement. Niet ter vervanging van een gevarieerde voeding en gezonde leefstijl.'}</div></div>`;
 }
 
-function A5_social(p,S){ // SOCIAL PROOF — trust, claim-free
+function A5_social(p,S){ // SOCIAL PROOF — trust, claim-free. clean light + bokeh + reflection
   const big=S.key==='story';
+  const pb = big?180:200;
   return `
-  <div style="position:absolute;inset:0;background:linear-gradient(180deg,#fff 0%, #eef6fc 100%)"></div>
-  ${diagStripe('var(--blue)')}
+  ${BG.meshLight(p.accent)}
+  <div style="position:absolute;left:0;right:0;top:0;height:14px;background:linear-gradient(90deg,var(--accent),var(--blue))"></div>
   <div style="position:absolute;left:${S.side}px;right:${S.side}px;top:${S.safeTop-(big?60:24)}px;display:flex;justify-content:space-between;align-items:center">
     ${logo(1.05,'#111')}<span class="pill badge-red" style="font-size:24px;padding:.5em .9em">★ Bestseller</span></div>
-  <div style="position:absolute;left:0;right:0;top:${big?340:250}px;text-align:center">
-    <div class="disp" style="color:var(--gold);font-size:${big?120:104}px;letter-spacing:.06em">★★★★★</div>
+  <div style="position:absolute;left:0;right:0;top:${big?330:240}px;text-align:center">
+    <div class="disp" style="color:var(--gold);font-size:${big?120:104}px;letter-spacing:.06em;text-shadow:0 6px 20px rgba(230,180,0,.3)">★★★★★</div>
     <div class="disp" style="color:#111;font-size:${big?92:80}px;margin-top:6px">4,5 / 5</div>
     <div class="cond" style="color:#345;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:${big?34:30}px;margin-top:6px">5.300+ beoordelingen</div>
   </div>
-  <div style="position:absolute;left:${big?120:96}px;right:${big?120:96}px;top:${big?700:540}px;text-align:center">
+  <div style="position:absolute;left:${big?120:90}px;right:${big?120:90}px;top:${big?690:520}px;text-align:center">
     <div class="cond" style="color:#0c2a3e;font-weight:700;font-style:italic;font-size:${big?44:38}px;line-height:1.3">“${p.quote}”</div>
     <div class="cond" style="color:#5a7488;font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:${big?26:23}px;margin-top:16px">— Geverifieerde klant</div>
   </div>
-  <img class="prod" src="${p.cutAbs}" style="position:absolute;left:50%;transform:translateX(-50%);bottom:${big?180:205}px;max-width:${big?54:44}%;max-height:${big?34:30}%;object-fit:contain"/>
+  ${BG.contact('50%', pb-8, big?420:340, 48)}
+  ${BG.reflection(p.cutAbs,'50%', pb-(big?260:210), big?'48%':'40%', big?'30%':'26%')}
+  <img class="prod" src="${p.cutAbs}" style="position:absolute;left:50%;transform:translateX(-50%);bottom:${pb}px;max-width:${big?54:44}%;max-height:${big?34:30}%;object-fit:contain;filter:drop-shadow(0 24px 36px rgba(0,0,0,.28))"/>
   <div style="position:absolute;left:0;right:0;bottom:${big?100:104}px;text-align:center">
     <span class="disp" style="color:#111;font-size:${big?52:44}px">${p.name}</span></div>`;
 }

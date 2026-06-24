@@ -4,3 +4,12 @@ data/products-raw-*.json
 data/bs-all-*.html
 data/home.html
 data/bestsellers.html
+
+# Large build artifacts (regenerable via scripts/render.js + lookbook.js)
+output/kosso-ad-creatives/
+output/kosso-ad-creatives-jpg/
+output/*.zip
+output/lookbook.html
+creatives/feed45/*.png
+creatives/story/*.png
+assets/products/

@@ -64,7 +64,7 @@ COPY = {
  10:{'kicker':'Weight Gainer','name':'BULK','sub':'Calorie- & eiwitrijke shake','flavor':'Meerdere smaken',
     'problem':'Moeite om genoeg calorieën binnen te krijgen?','solution':'Calorie- en eiwitrijke shake. Makkelijk extra binnenkrijgen.',
     'usps':['Calorie- & eiwitrijk','Romige, volle shake','Keuze uit meerdere smaken'],
-    'claim':CLAIM_PROT,'legal':GEN_SUP+' ¹ Geldt bij voldoende eiwitinname per dag.',
+    'claim':None,'legal':GEN_SUP,
     'quote':'Eindelijk makkelijk mijn calorieën halen. Lekker ook.'},
  11:{'kicker':'KSM-66 · Wortelextract','name':'ASHWAGANDHA','sub':'KSM-66 · 600 mg · Veganistisch','flavor':'Capsules',
     'problem':'Specifiek op zoek naar KSM-66?','solution':'600 mg KSM-66 wortelextract per dosering. Veganistisch.',
