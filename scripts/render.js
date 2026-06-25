@@ -37,7 +37,7 @@ function renderOne(job){
   return new Promise((resolve)=>{
     const {p,size,arch}=job;
     const S=C.SIZES[size];
-    const html=C.buildHTML(p,size,arch,debug,hasFlag('aibg'));
+    const html=C.buildHTML(p,size,arch,debug,hasFlag('aibg'),hasFlag('noprod'));
     const id=`p${String(p.rank).padStart(2,'0')}_${arch}_${size}`;
     const htmlPath=path.join(TMP,id+'.html');
     fs.writeFileSync(htmlPath,html);

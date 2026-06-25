@@ -177,7 +177,7 @@ const ORDER = ['A1_hero','A2_sale','A3_problem','A4_info','A5_social'];
 
 // Concepts that may use AI photoreal backgrounds (dark, scrim-safe). Problem/Social stay clean.
 const AIBG_OK = new Set(['A1_hero','A2_sale','A4_info']);
-function buildHTML(p, sizeKey, archKey, debugSafe=false, aibg=false){
+function buildHTML(p, sizeKey, archKey, debugSafe=false, aibg=false, noProd=false){
   const S = SIZES[sizeKey];
   const accent = p.accent || '#E84E4E';
   const accentDeep = p.accentDeep || accent;
@@ -187,8 +187,11 @@ function buildHTML(p, sizeKey, archKey, debugSafe=false, aibg=false){
     if (fs.existsSync(f)) _aibg = 'file://' + f;
   }
   const inner = ARCHETYPES[archKey]({ ...p, _aibg }, S);
+  // "Pure AI product" mode: on reference-mode AI scenes the product is already rendered by the
+  // model, so suppress our composited cutout (.prod) and keep only logo + compliant copy.
+  const hideProd = (noProd && _aibg) ? `<style>.prod{display:none!important}</style>` : '';
   const safe = debugSafe ? `<div class="safe"><div class="z" style="top:0;height:${S.safeTop}px"></div><div class="z" style="bottom:0;height:${S.safeBot}px"></div><div class="ln" style="top:${S.safeTop}px"></div><div class="ln" style="bottom:${S.safeBot}px"></div></div>`:'';
-  return `<!doctype html><html><head><meta charset="utf-8"><style>${BASE_CSS}</style></head><body>
+  return `<!doctype html><html><head><meta charset="utf-8"><style>${BASE_CSS}</style>${hideProd}</head><body>
   <div class="stage" style="width:${S.w}px;height:${S.h}px;background:#0c0c0c;--accent:${accent};--accentDeep:${accentDeep}">${inner}${safe}</div>
   </body></html>`;
 }
