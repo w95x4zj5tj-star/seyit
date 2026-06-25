@@ -12,10 +12,12 @@ respected / remove the AI slop" workflow.
 
 ## How to run (3 steps)
 ```bash
-# 1. Provide your Higgsfield / WaveSpeed API key
-export HIGGSFIELD_API_KEY=sk-xxxxxxxx
-#    (optional) point at a specific provider endpoint:
-# export HF_SUBMIT_URL=https://api.wavespeed.ai/api/v3/higgsfield/soul
+# 1. Provide your Higgsfield API credentials (key id + secret)
+export HIGGSFIELD_API_KEY=<key-id>
+export HIGGSFIELD_API_SECRET=<key-secret>
+#    (optional) resolution 720p|1080p (default 1080p) or a different model/endpoint:
+# export HF_RES=1080p
+# export HF_MODEL=higgsfield-ai/soul/standard
 
 # 2. Generate the 30 photoreal backgrounds (15 products x 2 formats) -> assets/bg_ai/*.jpg
 node scripts/higgsfield.js
@@ -23,6 +25,12 @@ node scripts/higgsfield.js
 # 3. Re-render the dark concepts (Hero / Sale / Info) over the AI backgrounds
 node scripts/render.js --ranks=all --sizes=feed45,story --out=creatives --aibg
 ```
+Uses the **native Higgsfield platform API** (`POST https://platform.higgsfield.ai/higgsfield-ai/soul/standard`,
+auth header `Authorization: Key <id>:<secret>`, async poll on `status_url`). The Soul model
+supports aspect ratios `9:16 / 16:9 / 4:3 / 3:4 / 1:1 / 2:3 / 3:2` (not `4:5`), so story →
+`9:16` and feed45 → `3:4`; `render.js --aibg` composites/crops each background into the exact
+1080×1920 / 1080×1350 canvas. **Credits are consumed per image** — the account behind the key
+must have sufficient balance (a credit-less key returns `{"detail":"not_enough_credits"}`).
 Problem→Oplossing and Social Proof intentionally stay on the clean CSS look (dark-text
 legibility); Hero, Sale and Informatief switch to the photoreal backgrounds.
 
