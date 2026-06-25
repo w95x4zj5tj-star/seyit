@@ -5,16 +5,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#E84E4E",
-    "prompt": "minimalist clean laboratory-grade studio backdrop, subtle #E84E4E gradient, fine white powder drifting, soft top light, scientific premium feel, lots of negative space, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "premium laboratory-grade studio set, empty illuminated white pedestal, subtle #E84E4E gradient glow, fine crystalline white powder drifting through a soft top spotlight, scientific clinical premium feel, glassy reflective floor, generous negative space, cinematic, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p01_story.jpg"
   },
   {
     "rank": 1,
     "name": "CREATINE",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#E84E4E",
-    "prompt": "minimalist clean laboratory-grade studio backdrop, subtle #E84E4E gradient, fine white powder drifting, soft top light, scientific premium feel, lots of negative space, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "premium laboratory-grade studio set, empty illuminated white pedestal, subtle #E84E4E gradient glow, fine crystalline white powder drifting through a soft top spotlight, scientific clinical premium feel, glassy reflective floor, generous negative space, cinematic, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p01_feed45.jpg"
   },
   {
@@ -23,16 +23,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#3E9BD6",
-    "prompt": "clean premium studio scene, dynamic milk and protein splash frozen in motion, soft gradient backdrop in #3E9BD6 and white, bright product photography lighting, marble podium, fresh and crisp, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "clean premium studio set, empty polished marble podium on a soft gradient cyclorama in #3E9BD6 and white, dynamic milk and protein splash frozen mid-air around the stage, bright crisp product-photography softboxes, fresh dairy droplets, airy, glossy reflections, shallow depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p02_story.jpg"
   },
   {
     "rank": 2,
     "name": "WHEY PROTEIN",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#3E9BD6",
-    "prompt": "clean premium studio scene, dynamic milk and protein splash frozen in motion, soft gradient backdrop in #3E9BD6 and white, bright product photography lighting, marble podium, fresh and crisp, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "clean premium studio set, empty polished marble podium on a soft gradient cyclorama in #3E9BD6 and white, dynamic milk and protein splash frozen mid-air around the stage, bright crisp product-photography softboxes, fresh dairy droplets, airy, glossy reflections, shallow depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p02_feed45.jpg"
   },
   {
@@ -41,16 +41,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#E8602E",
-    "prompt": "clean premium studio scene, dynamic milk and protein splash frozen in motion, soft gradient backdrop in #E8602E and white, bright product photography lighting, marble podium, fresh and crisp, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "clean premium studio set, empty polished marble podium on a soft gradient cyclorama in #E8602E and white, dynamic milk and protein splash frozen mid-air around the stage, bright crisp product-photography softboxes, fresh dairy droplets, airy, glossy reflections, shallow depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p03_story.jpg"
   },
   {
     "rank": 3,
     "name": "PROTEIN POPS",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#E8602E",
-    "prompt": "clean premium studio scene, dynamic milk and protein splash frozen in motion, soft gradient backdrop in #E8602E and white, bright product photography lighting, marble podium, fresh and crisp, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "clean premium studio set, empty polished marble podium on a soft gradient cyclorama in #E8602E and white, dynamic milk and protein splash frozen mid-air around the stage, bright crisp product-photography softboxes, fresh dairy droplets, airy, glossy reflections, shallow depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p03_feed45.jpg"
   },
   {
@@ -59,16 +59,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#2E9BD6",
-    "prompt": "dark dramatic photographic studio scene, swirling Blue Watermelon coloured smoke and powder splash in #2E9BD6 tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Blue Watermelon coloured smoke and powder bursting in #2E9BD6 tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #2E9BD6 haze, high-contrast, moody, deep cinematic depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p04_story.jpg"
   },
   {
     "rank": 4,
     "name": "TSUNAMI",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#2E9BD6",
-    "prompt": "dark dramatic photographic studio scene, swirling Blue Watermelon coloured smoke and powder splash in #2E9BD6 tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Blue Watermelon coloured smoke and powder bursting in #2E9BD6 tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #2E9BD6 haze, high-contrast, moody, deep cinematic depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p04_feed45.jpg"
   },
   {
@@ -77,16 +77,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#E0791F",
-    "prompt": "dark dramatic photographic studio scene, swirling Bold flavour coloured smoke and powder splash in #E0791F tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Bold flavour coloured smoke and powder bursting in #E0791F tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #E0791F haze, high-contrast, moody, deep cinematic depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p05_story.jpg"
   },
   {
     "rank": 5,
     "name": "APOCALYPSE",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#E0791F",
-    "prompt": "dark dramatic photographic studio scene, swirling Bold flavour coloured smoke and powder splash in #E0791F tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Bold flavour coloured smoke and powder bursting in #E0791F tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #E0791F haze, high-contrast, moody, deep cinematic depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p05_feed45.jpg"
   },
   {
@@ -95,16 +95,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#C8202E",
-    "prompt": "clean premium studio scene, dynamic milk and protein splash frozen in motion, soft gradient backdrop in #C8202E and white, bright product photography lighting, marble podium, fresh and crisp, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "clean premium studio set, empty polished marble podium on a soft gradient cyclorama in #C8202E and white, dynamic milk and protein splash frozen mid-air around the stage, bright crisp product-photography softboxes, fresh dairy droplets, airy, glossy reflections, shallow depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p06_story.jpg"
   },
   {
     "rank": 6,
     "name": "CHEAT BAR",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#C8202E",
-    "prompt": "clean premium studio scene, dynamic milk and protein splash frozen in motion, soft gradient backdrop in #C8202E and white, bright product photography lighting, marble podium, fresh and crisp, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "clean premium studio set, empty polished marble podium on a soft gradient cyclorama in #C8202E and white, dynamic milk and protein splash frozen mid-air around the stage, bright crisp product-photography softboxes, fresh dairy droplets, airy, glossy reflections, shallow depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p06_feed45.jpg"
   },
   {
@@ -113,16 +113,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#3CA63C",
-    "prompt": "dark dramatic photographic studio scene, swirling Sour candy coloured smoke and powder splash in #3CA63C tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Sour candy coloured smoke and powder bursting in #3CA63C tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #3CA63C haze, high-contrast, moody, deep cinematic depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p07_story.jpg"
   },
   {
     "rank": 7,
     "name": "MADLABS",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#3CA63C",
-    "prompt": "dark dramatic photographic studio scene, swirling Sour candy coloured smoke and powder splash in #3CA63C tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Sour candy coloured smoke and powder bursting in #3CA63C tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #3CA63C haze, high-contrast, moody, deep cinematic depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p07_feed45.jpg"
   },
   {
@@ -131,16 +131,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#E6A400",
-    "prompt": "fresh vibrant scene, crystal water splash and citrus, bright #E6A400 gradient sky, droplets, summer energy, clean and hydrating mood, airy, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "fresh vibrant hydration set, empty glass podium amid a crystal-clear water splash and flying citrus slices, bright #E6A400 gradient sky, sparkling droplets suspended in air, summer energy, clean refreshing mood, airy, high-key with crisp highlights, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p08_story.jpg"
   },
   {
     "rank": 8,
     "name": "ELECTROLYTE",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#E6A400",
-    "prompt": "fresh vibrant scene, crystal water splash and citrus, bright #E6A400 gradient sky, droplets, summer energy, clean and hydrating mood, airy, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "fresh vibrant hydration set, empty glass podium amid a crystal-clear water splash and flying citrus slices, bright #E6A400 gradient sky, sparkling droplets suspended in air, summer energy, clean refreshing mood, airy, high-key with crisp highlights, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p08_feed45.jpg"
   },
   {
@@ -149,16 +149,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#1FA39C",
-    "prompt": "dark dramatic photographic studio scene, swirling Tropical coloured smoke and powder splash in #1FA39C tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Tropical coloured smoke and powder bursting in #1FA39C tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #1FA39C haze, high-contrast, moody, deep cinematic depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p09_story.jpg"
   },
   {
     "rank": 9,
     "name": "ANACONDA",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#1FA39C",
-    "prompt": "dark dramatic photographic studio scene, swirling Tropical coloured smoke and powder splash in #1FA39C tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Tropical coloured smoke and powder bursting in #1FA39C tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #1FA39C haze, high-contrast, moody, deep cinematic depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p09_feed45.jpg"
   },
   {
@@ -167,16 +167,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#C8202E",
-    "prompt": "bold gym studio scene, dust and powder burst in #C8202E, dramatic side light, raw concrete, strong and heavy mass-building atmosphere, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "bold heavy gym studio set, empty raw-concrete plinth, dense dust and powder burst exploding in #C8202E, dramatic hard side light and long shadows, industrial strength atmosphere, mass-building power, cinematic grit, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p10_story.jpg"
   },
   {
     "rank": 10,
     "name": "BULK",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#C8202E",
-    "prompt": "bold gym studio scene, dust and powder burst in #C8202E, dramatic side light, raw concrete, strong and heavy mass-building atmosphere, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "bold heavy gym studio set, empty raw-concrete plinth, dense dust and powder burst exploding in #C8202E, dramatic hard side light and long shadows, industrial strength atmosphere, mass-building power, cinematic grit, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p10_feed45.jpg"
   },
   {
@@ -185,16 +185,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#36A85A",
-    "prompt": "natural earthy botanical scene, soft daylight, ashwagandha roots and green leaves bokeh, warm neutral and #36A85A tones, calm wellness mood, organic textures, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "natural earthy botanical set, empty raw-stone pedestal in soft warm daylight, ashwagandha roots, green leaves and dried herbs scattered as foreground bokeh, warm neutral and #36A85A tones, calm organic wellness mood, linen and wood textures, shallow depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p11_story.jpg"
   },
   {
     "rank": 11,
     "name": "ASHWAGANDHA",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#36A85A",
-    "prompt": "natural earthy botanical scene, soft daylight, ashwagandha roots and green leaves bokeh, warm neutral and #36A85A tones, calm wellness mood, organic textures, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "natural earthy botanical set, empty raw-stone pedestal in soft warm daylight, ashwagandha roots, green leaves and dried herbs scattered as foreground bokeh, warm neutral and #36A85A tones, calm organic wellness mood, linen and wood textures, shallow depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p11_feed45.jpg"
   },
   {
@@ -203,16 +203,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#8E2DB0",
-    "prompt": "dark dramatic photographic studio scene, swirling Berry blast coloured smoke and powder splash in #8E2DB0 tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Berry blast coloured smoke and powder bursting in #8E2DB0 tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #8E2DB0 haze, high-contrast, moody, deep cinematic depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p12_story.jpg"
   },
   {
     "rank": 12,
     "name": "SAMURAI",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#8E2DB0",
-    "prompt": "dark dramatic photographic studio scene, swirling Berry blast coloured smoke and powder splash in #8E2DB0 tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Berry blast coloured smoke and powder bursting in #8E2DB0 tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #8E2DB0 haze, high-contrast, moody, deep cinematic depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p12_feed45.jpg"
   },
   {
@@ -221,16 +221,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#E8487E",
-    "prompt": "dark dramatic photographic studio scene, swirling Cafeïnevrij coloured smoke and powder splash in #E8487E tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Cafeïnevrij coloured smoke and powder bursting in #E8487E tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #E8487E haze, high-contrast, moody, deep cinematic depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p13_story.jpg"
   },
   {
     "rank": 13,
     "name": "OPGEPOMPT",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#E8487E",
-    "prompt": "dark dramatic photographic studio scene, swirling Cafeïnevrij coloured smoke and powder splash in #E8487E tones, volumetric rim lighting, wet concrete podium, energetic gym atmosphere, high-contrast, moody, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "dark dramatic cinematic product-photography set, empty wet black-concrete podium catching a hard spotlight, explosive swirling Cafeïnevrij coloured smoke and powder bursting in #E8487E tones, volumetric god-rays and rim light, energetic underground-gym atmosphere, glowing #E8487E haze, high-contrast, moody, deep cinematic depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p13_feed45.jpg"
   },
   {
@@ -239,16 +239,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#5BB6E8",
-    "prompt": "clean premium studio scene, dynamic milk and protein splash frozen in motion, soft gradient backdrop in #5BB6E8 and white, bright product photography lighting, marble podium, fresh and crisp, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "clean premium studio set, empty polished marble podium on a soft gradient cyclorama in #5BB6E8 and white, dynamic milk and protein splash frozen mid-air around the stage, bright crisp product-photography softboxes, fresh dairy droplets, airy, glossy reflections, shallow depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p14_story.jpg"
   },
   {
     "rank": 14,
     "name": "CLEAR WHEY",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#5BB6E8",
-    "prompt": "clean premium studio scene, dynamic milk and protein splash frozen in motion, soft gradient backdrop in #5BB6E8 and white, bright product photography lighting, marble podium, fresh and crisp, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "clean premium studio set, empty polished marble podium on a soft gradient cyclorama in #5BB6E8 and white, dynamic milk and protein splash frozen mid-air around the stage, bright crisp product-photography softboxes, fresh dairy droplets, airy, glossy reflections, shallow depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p14_feed45.jpg"
   },
   {
@@ -257,16 +257,16 @@
     "format": "story",
     "aspect_ratio": "9:16",
     "accent": "#A66A33",
-    "prompt": "clean premium studio scene, dynamic milk and protein splash frozen in motion, soft gradient backdrop in #A66A33 and white, bright product photography lighting, marble podium, fresh and crisp, vertical composition, subject space lower-center, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "clean premium studio set, empty polished marble podium on a soft gradient cyclorama in #A66A33 and white, dynamic milk and protein splash frozen mid-air around the stage, bright crisp product-photography softboxes, fresh dairy droplets, airy, glossy reflections, shallow depth of field, vertical 9:16 composition, bare empty display stage in the lower-center, dark gradient at very top and very bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p15_story.jpg"
   },
   {
     "rank": 15,
     "name": "IJSKOFFIE",
     "format": "feed45",
-    "aspect_ratio": "4:5",
+    "aspect_ratio": "3:4",
     "accent": "#A66A33",
-    "prompt": "clean premium studio scene, dynamic milk and protein splash frozen in motion, soft gradient backdrop in #A66A33 and white, bright product photography lighting, marble podium, fresh and crisp, balanced composition, subject space center-right, photorealistic, ultra detailed, commercial advertising photography, 8k, sharp, professional colour grading. no text, no words, no letters, no logos, no watermark, no people faces, no product packaging, leave clear empty negative space in the centre and lower third for product placement.",
+    "prompt": "clean premium studio set, empty polished marble podium on a soft gradient cyclorama in #A66A33 and white, dynamic milk and protein splash frozen mid-air around the stage, bright crisp product-photography softboxes, fresh dairy droplets, airy, glossy reflections, shallow depth of field, balanced 3:4 composition, bare empty display stage center to center-right, dark gradient at top and bottom, photorealistic, ultra detailed, commercial advertising photography, shot on Phase One, 8k, razor sharp, professional colour grading, dramatic studio lighting. the podium and pedestal are completely bare, empty and unoccupied, nothing is standing or placed on the podium, no object on the pedestal; absolutely no product, no bottle, no jar, no tub, no can, no container, no box, no packaging, no label, no text, no words, no letters, no numbers, no logos, no watermark, no people, no hands, no faces; keep the lower third clear, and keep the top edge and bottom edge dark and uncluttered for overlay copy.",
     "out": "assets/bg_ai/p15_feed45.jpg"
   }
 ]
