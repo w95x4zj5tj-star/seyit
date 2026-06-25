@@ -11,12 +11,13 @@ const SIZES = {
 };
 
 // ---------- shared components ----------
+const LOGO_WHITE = 'file://' + path.resolve(__dirname, '../assets/logo/logo-white.svg');
+const LOGO_BLACK = 'file://' + path.resolve(__dirname, '../assets/logo/logo-main.svg');
 function logo(scale=1, fg='#fff'){
-  const s = 30*scale;
-  return `<div class="kosso-logo" style="--logo-fg:${fg};font-size:${s}px">
-    <span class="kn" style="font-size:${s*1.15}px">KN</span>
-    <span class="wm"><b style="font-size:${s*1.18}px">KOSSO</b><span style="font-size:${s*0.5}px">NUTRITION</span></span>
-  </div>`;
+  const light = fg !== '#111' && fg !== '#000';          // light text => dark bg => white logo
+  const src = light ? LOGO_WHITE : LOGO_BLACK;
+  const h = Math.round(48*scale);                         // real logo aspect 154:56
+  return `<img src="${src}" style="height:${h}px;width:auto;display:block"/>`;
 }
 function stars(scale=1, fg='#fff'){
   const s=30*scale;
@@ -52,7 +53,7 @@ function diagStripe(accent){
 function A1_hero(p,S){ // BRAND / HERO — awareness, claim-free. studio <-> immersive ambient
   const big = S.key==='story';
   const pb = big?300:255, pcx='50%';
-  const bg = (p.rank%2===0) ? BG.ambient(p.cutAbs,p.accent) : BG.studio(p.accent);
+  const bg = p._aibg ? BG.aiPhoto(p._aibg,p.accent) : ((p.rank%2===0) ? BG.ambient(p.cutAbs,p.accent) : BG.studio(p.accent));
   return `
   ${bg}
   ${BG.grain(0.09)}
@@ -75,7 +76,7 @@ function A1_hero(p,S){ // BRAND / HERO — awareness, claim-free. studio <-> imm
 function A2_sale(p,S){ // SALE / OFFER — conversion, claim-free. bold energy <-> immersive ambient
   const big=S.key==='story';
   const useAmbient = (p.rank%3===0);
-  const bg = useAmbient ? BG.ambient(p.cutAbs,p.accent,true) : BG.energy(p.accent);
+  const bg = p._aibg ? BG.aiPhoto(p._aibg,p.accent) : (useAmbient ? BG.ambient(p.cutAbs,p.accent,true) : BG.energy(p.accent));
   return `
   ${bg}
   <div style="position:absolute;right:-12%;top:${big?260:180}px;width:${big?78:74}%;height:${big?52:56}%;background:radial-gradient(closest-side, rgba(0,0,0,.55), transparent 72%);filter:blur(20px)"></div>
@@ -126,7 +127,7 @@ function A3_problem(p,S){ // PROBLEEM → OPLOSSING — consideration, claim-saf
 
 function A4_info(p,S){ // INFORMATIEF / USP — education. realistic carbon <-> immersive ambient
   const big=S.key==='story';
-  const bg = (p.rank%2===1) ? BG.carbon(p.accent) : (BG.ambient(p.cutAbs,p.accent,true)+`<div style="position:absolute;left:0;top:0;bottom:0;width:12px;background:linear-gradient(180deg,var(--accent),var(--accentDeep))"></div>`);
+  const bg = p._aibg ? BG.aiPhoto(p._aibg,p.accent) : ((p.rank%2===1) ? BG.carbon(p.accent) : (BG.ambient(p.cutAbs,p.accent,true)+`<div style="position:absolute;left:0;top:0;bottom:0;width:12px;background:linear-gradient(180deg,var(--accent),var(--accentDeep))"></div>`));
   const chips = p.usps.map(u=>`<div style="display:flex;align-items:center;gap:.6em;margin-bottom:${big?22:16}px">
       <span style="flex:0 0 auto;width:${big?52:46}px;height:${big?52:46}px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-family:Anton;font-size:${big?26:22}px;box-shadow:0 6px 18px rgba(0,0,0,.4)">✓</span>
       <span class="cond" style="color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:${big?38:33}px">${u}</span></div>`).join('');
@@ -174,11 +175,18 @@ function A5_social(p,S){ // SOCIAL PROOF — trust, claim-free. clean light + bo
 const ARCHETYPES = { A1_hero, A2_sale, A3_problem, A4_info, A5_social };
 const ORDER = ['A1_hero','A2_sale','A3_problem','A4_info','A5_social'];
 
-function buildHTML(p, sizeKey, archKey, debugSafe=false){
+// Concepts that may use AI photoreal backgrounds (dark, scrim-safe). Problem/Social stay clean.
+const AIBG_OK = new Set(['A1_hero','A2_sale','A4_info']);
+function buildHTML(p, sizeKey, archKey, debugSafe=false, aibg=false){
   const S = SIZES[sizeKey];
   const accent = p.accent || '#E84E4E';
   const accentDeep = p.accentDeep || accent;
-  const inner = ARCHETYPES[archKey](p, S);
+  let _aibg = null;
+  if (aibg && AIBG_OK.has(archKey)) {
+    const f = path.resolve(__dirname, `../assets/bg_ai/p${String(p.rank).padStart(2,'0')}_${sizeKey}.jpg`);
+    if (fs.existsSync(f)) _aibg = 'file://' + f;
+  }
+  const inner = ARCHETYPES[archKey]({ ...p, _aibg }, S);
   const safe = debugSafe ? `<div class="safe"><div class="z" style="top:0;height:${S.safeTop}px"></div><div class="z" style="bottom:0;height:${S.safeBot}px"></div><div class="ln" style="top:${S.safeTop}px"></div><div class="ln" style="bottom:${S.safeBot}px"></div></div>`:'';
   return `<!doctype html><html><head><meta charset="utf-8"><style>${BASE_CSS}</style></head><body>
   <div class="stage" style="width:${S.w}px;height:${S.h}px;background:#0c0c0c;--accent:${accent};--accentDeep:${accentDeep}">${inner}${safe}</div>

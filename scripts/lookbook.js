@@ -29,7 +29,7 @@ function productPage(p){
 }
 
 const cover=`<section class="page cover">
-  <div class="kosso-logo" style="--logo-fg:#111;font-size:60px"><span class="kn" style="font-size:70px">KN</span><span class="wm"><b style="font-size:72px">KOSSO</b><span style="font-size:30px">NUTRITION</span></span></div>
+  <img src="${f('assets/logo/logo-main.svg')}" style="height:96px"/>
   <div class="disp" style="font-size:120px;margin-top:40px;color:#111">AD CREATIVES</div>
   <div class="cond" style="font-size:40px;font-weight:700;color:var(--red);letter-spacing:.1em">TOP 15 PRODUCTEN · 5 CONCEPTEN · STORY + 4:5</div>
   <div class="cond" style="font-size:30px;color:#444;margin-top:30px;max-width:1000px;line-height:1.5">

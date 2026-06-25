@@ -6,7 +6,7 @@ const sw=(name,hex,fg='#fff')=>`<div style="display:flex;flex-direction:column">
 const html=`<!doctype html><html><head><meta charset="utf-8"><style>${BASE}</style></head>
 <body><div class="stage" style="width:1600px;height:2260px;background:#fff;padding:70px 80px;color:#111">
   <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:4px solid #111;padding-bottom:26px">
-    <div class="kosso-logo" style="--logo-fg:#111;font-size:42px"><span class="kn" style="font-size:48px">KN</span><span class="wm"><b style="font-size:50px">KOSSO</b><span style="font-size:22px">NUTRITION</span></span></div>
+    <img src="file://${path.resolve(__dirname,'../assets/logo/logo-main.svg')}" style="height:64px"/>
     <div class="disp" style="font-size:40px;color:#111">AD CREATIVE · DESIGN SYSTEM</div>
   </div>
 

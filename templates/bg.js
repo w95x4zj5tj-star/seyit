@@ -73,4 +73,13 @@ function contact(leftPct, bottomPx, w, h){
   return `<div style="position:absolute;left:${leftPct};bottom:${bottomPx}px;width:${w}px;height:${h}px;transform:translateX(-50%);background:radial-gradient(closest-side, rgba(0,0,0,.55), transparent 72%);filter:blur(6px)"></div>`;
 }
 
-module.exports = { grain, smoke, vignette, bokeh, ambient, studio, energy, carbon, meshLight, reflection, contact };
+module.exports = { grain, smoke, vignette, bokeh, ambient, studio, energy, carbon, meshLight, reflection, contact, aiPhoto };
+
+// --- photoreal AI background (Higgsfield) + legibility scrim. Used in --aibg mode. ---
+function aiPhoto(fileUrl, accent){
+  return `
+  <img src="${fileUrl}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"/>
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,.62) 0%, rgba(0,0,0,.30) 34%, rgba(0,0,0,.42) 64%, rgba(0,0,0,.78) 100%)"></div>
+  <div style="position:absolute;inset:0;background:radial-gradient(120% 90% at 50% 30%, transparent 40%, rgba(0,0,0,.5) 100%)"></div>
+  <div style="position:absolute;left:0;top:0;bottom:0;width:10px;background:linear-gradient(180deg,${accent},${accent}00)"></div>`;
+}
